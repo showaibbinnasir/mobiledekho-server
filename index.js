@@ -16,6 +16,7 @@ async function run(){
     try{
         const brandCollection = client.db('mobileDekho').collection('brands')
         const productCollection = client.db('mobileDekho').collection('allProducts')
+        const orderCollection = client.db('mobileDekho').collection('orders')
         app.get('/brands', async(req,res)=>{
             const query = {}
             const result = await brandCollection.find(query).toArray();
@@ -31,6 +32,11 @@ async function run(){
             const query = {brand_id : id}
             const result = await productCollection.find(query).toArray();
             res.send(result)
+        })
+        app.post('/orders', async(req, res) => {
+            const order = req.body
+            const result = await orderCollection.insertOne(order);
+            res.send(result);
         })
         
     }
