@@ -1,0 +1,18 @@
+[
+    {
+        "productId" : "01",
+        "ProductName" : "Samsung Galaxy J7",
+        "camera" : {
+            "back" : "13MP",
+            "front" : "5MP"
+        },
+        "memory" : {
+            "ram" : "1.5GB",
+            "rom" : "16GB"
+        },
+        "chipset" : "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+        "original_price" : 6910,
+        "seller_price" : 3200
+
+    }
+]

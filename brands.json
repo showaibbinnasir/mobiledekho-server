@@ -1,0 +1,12 @@
+[
+    {
+        "brand_id" : "01",
+        "brand_name" : "Samsung"
+    },{
+        "brand_id" : "02",
+        "brand_name" : "Apple"
+    },{
+        "brand_id" : "01",
+        "brand_name" : "Xaiomi"
+    }
+]
