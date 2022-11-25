@@ -1,6 +1,7 @@
 [
     {
         "productId" : "01",
+        "brand_id" : "01",
         "ProductName" : "Samsung Galaxy J7",
         "camera" : {
             "back" : "13MP",
@@ -12,7 +13,130 @@
         },
         "chipset" : "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
         "original_price" : 6910,
-        "seller_price" : 3200
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-j7-j700f.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "2 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md delwar",
+        "sellerId" : "01"
 
+    },
+    {
+        "productId" : "02",
+        "brand_id" : "01",
+        "ProductName" : "Samsung Galaxy s22 ultra",
+        "camera" : {
+            "back" : "108+10+10+12MP",
+            "front" : "40MP"
+        },
+        "memory" : {
+            "ram" : "12Gb",
+            "rom" : "156GB"
+        },
+        "chipset" : "Qualcomm SM8450 Snapdragon 8 Gen 1 (4 nm) - ROW",
+        "original_price" : 6910,
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s22-ultra-5g.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "0.5 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md faisal",
+        "sellerId" : "02"
+    },
+    {
+        "productId" : "03",
+        "brand_id" : "02",
+        "ProductName" : "Iphone 11 pro",
+        "camera" : {
+            "back" : "12+12+12MP",
+            "front" : "12MP"
+        },
+        "memory" : {
+            "ram" : "4Gb",
+            "rom" : "256GB"
+        },
+        "chipset" : "Apple A13 Bionic (7 nm+)",
+        "original_price" : 6910,
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-11-pro-max-.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "0.5 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md thowhid",
+        "sellerId" : "03"
+    },
+    {
+        "productId" : "04",
+        "brand_id" : "02",
+        "ProductName" : "Iphone 12 pro",
+        "camera" : {
+            "back" : "12+12+12MP",
+            "front" : "12MP"
+        },
+        "memory" : {
+            "ram" : "4Gb",
+            "rom" : "256GB"
+        },
+        "chipset" : "Apple A15 Bionic (6 nm+)",
+        "original_price" : 6910,
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "0.5 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md Fahim",
+        "sellerId" : "04"
+    },
+    {
+        "productId" : "05",
+        "brand_id" : "03",
+        "ProductName" : "Mi note 10 pro max",
+        "camera" : {
+            "back" : "108+8+5MP",
+            "front" : "40MP"
+        },
+        "memory" : {
+            "ram" : "6Gb",
+            "rom" : "128GB"
+        },
+        "chipset" : "Qualcomm Snapdragon 732G",
+        "original_price" : 6910,
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "0.5 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md Achem",
+        "sellerId" : "05"
+    },
+    {
+        "productId" : "06",
+        "brand_id" : "03",
+        "ProductName" : "Mi note 11 pro",
+        "camera" : {
+            "back" : "64+8+5MP",
+            "front" : "40MP"
+        },
+        "memory" : {
+            "ram" : "8Gb",
+            "rom" : "128GB"
+        },
+        "chipset" : "Mediatek Dimensity 710",
+        "original_price" : 6910,
+        "seller_price" : 3200,
+        "thumbnail" : "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro--.jpg",
+        "location" : "chattogram",
+        "yearOfuse" : "0.5 years",
+        "postedTime" : "11 july 2022",
+        "verification" : true,
+        "sellerName" : "Md Minhaz",
+        "sellerId" : "06"
     }
+    
 ]

@@ -1,7 +1,8 @@
 [
     {
         "brand_id" : "01",
-        "brand_name" : "Samsung"
+        "brand_name" : "Samsung",
+        "thumbnail" : "https://img.giznext.com/assets/model/1/11771/samsung-mobiles-samsung-galaxy-a61s-1626947751.jpg"
     },{
         "brand_id" : "02",
         "brand_name" : "Apple"
