@@ -17,11 +17,24 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run(){
     try{
         const brandCollection = client.db('mobileDekho').collection('brands')
+        const productCollection = client.db('mobileDekho').collection('allProducts')
         app.get('/brands', async(req,res)=>{
             const query = {}
             const result = await brandCollection.find(query).toArray();
             res.send(result)
         })
+        app.get('/products', async(req,res)=>{
+            const query = {}
+            const result = await productCollection.find(query).toArray();
+            res.send(result)
+        })
+        app.get('/products/:id', async(req,res)=>{
+            const id = req.params.id;
+            const query = {brand_id : id}
+            const result = await productCollection.find(query).toArray();
+            res.send(result)
+        })
+        
     }
     finally{
 
