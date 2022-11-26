@@ -9,6 +9,7 @@ require('dotenv').config();
 
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+const { query } = require('express');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@myfirstdb.w4kvmll.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
@@ -39,6 +40,17 @@ async function run(){
             const result = await orderCollection.insertOne(order);
             res.send(result);
         })
+        app.get('/orders', async(req,res)=>{
+            const email = req.query.email;
+            let query = {}
+            if(email){
+                query = {email};
+            }
+
+            const result = await orderCollection.find(query).toArray()
+            res.send(result);
+        })
+
         app.post('/users', async(req,res)=>{
             const user = req.body
             const result = await userCollection.insertOne(user);
