@@ -8,7 +8,7 @@ require('dotenv').config();
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@myfirstdb.w4kvmll.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
@@ -43,6 +43,12 @@ async function run(){
             const user = req.body
             const result = await userCollection.insertOne(user);
             res.send(result)
+        })
+        app.get('/users/admin/:email' , async(req,res)=>{
+            const email = req.params.email;
+            const query = { email }
+            const user = await userCollection.findOne(query);
+            res.send({isAdmin : user?.role === 'admin'})
         })
         
     }
