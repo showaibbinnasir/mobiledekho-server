@@ -56,6 +56,12 @@ async function run(){
             const result = await userCollection.insertOne(user);
             res.send(result)
         })
+
+        app.get('/users', async(req,res)=>{
+            const query = {}
+            const result = await userCollection.find(query).toArray();
+            res.send(result)
+        })
         app.get('/users/admin/:email' , async(req,res)=>{
             const email = req.params.email;
             const query = { email }
