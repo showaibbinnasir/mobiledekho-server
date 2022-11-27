@@ -29,6 +29,25 @@ async function run(){
             const result = await productCollection.find(query).toArray();
             res.send(result)
         })
+        app.delete('/products/:id', async(req,res)=>{
+            const data = req.params.id;
+            const query = {_id : ObjectId(data)};
+            const result = await productCollection.deleteOne(query);
+            res.send(result)
+        })
+        app.put('/products/update/:id', async(req,res)=>{
+            const id= req.params.id;
+            const filter = { _id : ObjectId(id)}
+            const user = req.body;
+            const option = { upsert : true}
+            const updatedUser = {
+                $set : {
+                    verification : user.verification,
+                }
+            }
+            const result = await productCollection.updateOne(filter, updatedUser, option);
+            res.send(result);
+        })
         app.get('/products/:id', async(req,res)=>{
             const id = req.params.id;
             const query = {brand_id : id}
@@ -39,6 +58,13 @@ async function run(){
             const order = req.body
             const result = await orderCollection.insertOne(order);
             res.send(result);
+        })
+
+        app.delete('/users/:id', async(req,res)=>{
+            const data = req.params.id;
+            const query = {_id : ObjectId(data)};
+            const result = await userCollection.deleteOne(query);
+            res.send(result)
         })
         app.get('/orders', async(req,res)=>{
             const email = req.query.email;
