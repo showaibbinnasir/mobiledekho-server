@@ -24,6 +24,11 @@ async function run(){
             const result = await brandCollection.find(query).toArray();
             res.send(result)
         })
+        app.post('/products', async(req,res)=>{
+            const product = req.body
+            const result = await productCollection.insertOne(product);
+            res.send(result);
+        })
         app.get('/products', async(req,res)=>{
             const query = {}
             const result = await productCollection.find(query).toArray();
